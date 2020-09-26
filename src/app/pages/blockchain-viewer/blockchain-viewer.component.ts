@@ -1,12 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { BlockchainService } from '../../services/blockchain.service';
+import { Component, OnInit, Input } from "@angular/core";
+import { BlockchainService } from "../../services/blockchain.service";
+
 @Component({
-  selector: 'app-blockchain-viewer',
-  templateUrl: './blockchain-viewer.component.html',
-  styleUrls: ['./blockchain-viewer.component.scss']
+  selector: "app-blockchain-viewer",
+  templateUrl: "./blockchain-viewer.component.html",
+  styleUrls: ["./blockchain-viewer.component.scss"],
 })
 export class BlockchainViewerComponent implements OnInit {
-
   public blocks = [];
   public selectedBlock = null;
 
@@ -16,8 +16,7 @@ export class BlockchainViewerComponent implements OnInit {
     console.log(this.blocks);
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   showTransactions(block) {
     console.log(block);
